@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "build": "cd src && yarn build",
+    "clean": "rm -rf public/*",
+    "copy": "cp -R functions/nuxt/dist/ public/",
+    "preserve": "yarn clean && yarn build && yarn copy",
+    "serve": "firebase serve --only functions,hosting"
+  }
+}
